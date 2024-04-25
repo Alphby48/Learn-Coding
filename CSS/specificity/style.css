@@ -1,0 +1,7 @@
+ul#all li {
+    color: blue;
+}
+
+ul#all li.favorit {
+    color: red;
+}

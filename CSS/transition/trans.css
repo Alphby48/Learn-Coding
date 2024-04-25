@@ -1,0 +1,68 @@
+body {
+  margin: o;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+.kotak1 {
+  transition: all 5s 1.5s;
+}
+
+.kotak2 {
+  transition: all 5s ease-in 1.5s;
+}
+
+.kotak3 {
+  transition: all 5s ease-out 1.5s;
+}
+
+.kotak4 {
+  transition: all 5s ease-in-out 1.5s;
+}
+
+.kotak5 {
+  transition: all 5s linear 1.5s;
+}
+
+.kotak6 {
+  transition: all 5s cubic-bezier(0.99, 0.16, 0, 1.27) 1.5s;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 100px;
+  margin: 5px 0;
+}
+
+.container:hover .kotak {
+  transform: rotate(720deg);
+  margin-left: 800px;
+  background-color: blueviolet;
+}
+
+.navbar {
+  width: 900px;
+  margin: 10px auto;
+  border: 2px solid black;
+}
+
+.squire {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  transition: margin-left 3s, transform 3s 2s, background-color 500ms 3s;
+}
+
+.navbar:hover .squire {
+  margin-left: 800px;
+  background-color: chartreuse;
+  transform: rotate(360deg);
+}

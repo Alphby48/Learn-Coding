@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "ubuntu";
+  overflow-x: hidden;
+}
+/* font */
+@font-face {
+  font-family: "poppins";
+  src: url(font/poppins-semibold-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: url(font/josefinsans-regular-webfont.woff) format("woff");
+}
+@font-face {
+  font-family: "pacifico";
+  src: url(font/pacifico-webfont.woff) format("woff");
+}
+/* Navbar */
+
+nav {
+  display: flex;
+  background-color: rgb(180, 78, 232);
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  color: rgb(234, 192, 232);
+}
+nav .logo {
+  font-family: "pacifico";
+  letter-spacing: 2px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+nav ul li a {
+  color: rgb(234, 192, 232);
+  text-decoration: none;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(234, 192, 232);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* animasi */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+  background-color: white;
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+  background-color: white;
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(180, 78, 232);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

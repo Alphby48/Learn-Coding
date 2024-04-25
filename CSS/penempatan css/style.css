@@ -1,0 +1,12 @@
+h1 {
+    color: lightblue;
+    font-family: arial;
+    font-size: 100px;
+    text-align: center;
+}
+
+p {
+    font-family: arial;
+    font-style: italic;
+    color: blue;
+}

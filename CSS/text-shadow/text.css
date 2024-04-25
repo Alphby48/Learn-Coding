@@ -1,0 +1,21 @@
+.container {
+  border: 2px solid black;
+  background-color: rgba(240, 9, 9, 0.192);
+}
+
+h1 {
+  font-size: 100px;
+  font-family: arial;
+  color: aliceblue;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: 5px 5px 3px rgba(10, 145, 207, 0.623),
+    -5px -5px 3px rgba(33, 175, 14, 0.603);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+h1:hover {
+  text-shadow: -5px -5px 3px rgba(10, 145, 207, 0.623),
+    5px 5px 3px rgba(33, 175, 14, 0.603);
+}

@@ -1,0 +1,36 @@
+.navigasi {
+    background-color: aqua;
+}
+
+.main {
+    background-color: blue;
+    width: 600px;
+}
+
+.main h2 {
+    background-color: pink;
+}
+
+
+/*.main span {
+    background-color: chartreuse;
+}*/
+
+a {
+    background-color: aquamarine;
+    width: 200px;
+    display: inline-block;
+}
+
+img {
+    display: none;
+    width: 200px;
+    height: 200px;
+}
+
+
+/*h1,
+h2,
+p {
+    background-color: lightgreen;
+}*/

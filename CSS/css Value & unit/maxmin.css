@@ -1,0 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
+img {
+  min-width: 100px;
+}

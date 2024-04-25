@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100vh;
+      }
+      body {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cls {
+        background-color: aqua;
+        color: rgb(236, 72, 195);
+      }
+      .boX {
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>bermain dengan warna</h1>
+      <button>click</button>
+    </div>
+    <br /><br />
+    <div class="boX red"></div>
+    <input type="range" name="sRed" id="" min="0" max="255" />
+    <div class="boX green"></div>
+    <input type="range" name="sGreen" id="" min="0" max="255" />
+    <div class="boX blue"></div>
+    <input type="range" name="sBlue" id="" min="0" max="255" />
+    <script src="script.js"></script>
+  </body>
+</html>

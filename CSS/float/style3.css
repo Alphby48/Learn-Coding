@@ -1,0 +1,43 @@
+.container {
+  width: 800px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 5px;
+}
+
+.kanan {
+  width: 150px;
+  height: 800px;
+  background-color: aqua;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tengah {
+  width: 500px;
+  height: 800px;
+  background-color: firebrick;
+  float: left;
+}
+
+.kiri {
+  width: 150px;
+  height: 800px;
+  background-color: khaki;
+  float: right;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}

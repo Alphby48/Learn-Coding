@@ -1,0 +1,19 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.satu {
+    background-color: aquamarine;
+}
+
+.dua {
+    background-color: darkblue;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.tiga {
+    background-color: rebeccapurple;
+}

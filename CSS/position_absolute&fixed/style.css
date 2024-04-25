@@ -1,0 +1,45 @@
+body {
+    height: 2000px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.satu {
+    background-color: aquamarine;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.dua {
+    background-color: darkblue;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.tiga {
+    background-color: rebeccapurple;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.empat {
+    background-color: chartreuse;
+}
+
+.container {
+    width: 600px;
+    height: 650px;
+    border: 5px solid green;
+    position: relative;
+    top: 50px;
+}

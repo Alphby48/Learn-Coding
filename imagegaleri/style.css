@@ -1,0 +1,300 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*Style*/
+@font-face {
+  font-family: "juara";
+  src: url(font/kaushanscript-regular-webfont.woff) format(woff);
+}
+body {
+  font: 16px/36px "juara";
+  background-color: #ddd;
+  width: 1000px;
+}
+h1 {
+  position: relative;
+  font-size: 80px;
+  margin: 50px 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+  left: 140px;
+}
+.container {
+  position: relative;
+  width: 600px;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  left: 140px;
+}
+.gallery li {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /*overflow: hidden;*/
+  border: 5px solid #666;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+.gallery li span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: #333;
+  text-shadow: 1px 1px 1px #ddd;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0) rotate(0deg);
+}
+.gallery li a:hover span {
+  opacity: 1;
+  transform: scale(1) rotate(369deg);
+}
+.gallery li span,
+.gallery li img,
+.gallery li {
+  border-radius: 50%;
+}
+.gallery li img {
+  width: 120px;
+  height: 120px;
+}
+.clear {
+  clear: both;
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 999;
+  text-align: center;
+  padding: 100px 0;
+}
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+.overlay:target img {
+  border-radius: 0;
+  width: 600px;
+  height: 800px;
+  animation: zoom 1s;
+}
+.overlay .close {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  color: white;
+  text-decoration: none;
+  margin-left: -20px;
+  border: 1px solid white;
+  padding: 5px 2px 5px 2px;
+  line-height: 20px;
+  background-color: black;
+  opacity: 0;
+}
+.overlay:target .close {
+  animation: close 0.5s 0.5s forwards;
+}
+.overlay:target .prev {
+  animation: nextprev 0.5s 0.5s forwards;
+}
+.overlay:target .next {
+  animation: prevnext 0.5s 0.5s forwards;
+}
+.next,
+.prev {
+  position: absolute;
+  background-image: url(img/next1.png);
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+  top: 25%;
+  margin-left: 20px;
+  opacity: 0;
+}
+.prev {
+  background-image: url(img/preview1.png);
+  margin-left: -75px;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes close {
+  0% {
+    margin-top: -20px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes nextprev {
+  0% {
+    margin-left: -95px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: -75px;
+    opacity: 1;
+  }
+}
+@keyframes prevnext {
+  0% {
+    opacity: 0;
+    margin-left: 40px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 20px;
+  }
+}

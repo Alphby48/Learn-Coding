@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "alex brush2";
+  src: url("font/alexbrush-regular-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: "alex brush";
+  src: url("font/AlexBrush-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "grand hotel";
+  src: url("font/GrandHotel-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "actionman";
+  src: url("font/Action_Man_Bold-webfont.woff") format('woff');
+}
+h1 {
+  font-family: "grand hotel";
+}
+
+.text {
+  font-family: "alex brush";
+}
+h2{
+  font-family: "actionman";
+}
+.text1{
+  font-family: "alex brush2";
+}

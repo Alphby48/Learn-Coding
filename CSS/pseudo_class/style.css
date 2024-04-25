@@ -1,0 +1,76 @@
+.hello {
+    color: chartreuse;
+}
+
+.hello:hover {
+    font-family: arial;
+    font-size: 30px;
+    color: chocolate;
+}
+
+.hello:active {
+    font-family: sans-serif;
+    font-style: italic;
+    color: black;
+}
+
+.hello:visited {
+    color: darkmagenta;
+}
+
+
+/*li:first-child a {
+    color: aqua;
+}*/
+
+
+/*li:last-child a {
+    color: aqua;
+}*/
+
+
+/*li:nth-child(3) a {
+    color: rgb(190, 238, 16);
+}*/
+
+
+/*li:nth-child(2n) a {
+    color: deeppink;
+}*/
+
+
+/*li:nth-child(3n-2) a {
+    color: deeppink;
+}*/
+
+
+/*li:nth-child(4n+2) a {
+    color: deeppink;
+}*/
+
+
+/*li:nth-child(odd) a {
+    color: deeppink;
+}*/
+
+
+/*li:nth-child(even) a {
+    color: deeppink;
+}
+
+li:nth-child(even):hover a {
+    color: rgb(27, 147, 222);
+}*/
+
+p:first-of-type {
+    color: aqua;
+}
+
+p:first-of-type:hover {
+    color: rgb(247, 13, 177);
+    font-size: 20px;
+}
+
+p:last-of-type {
+    color: rgb(16, 245, 107);
+}

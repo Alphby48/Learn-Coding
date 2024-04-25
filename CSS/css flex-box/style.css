@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+/* kolom */
+
+.container-satu {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+.sidebar-dua {
+  flex: 2;
+  order: 3;
+}
+/* features service */
+
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+}
+.layanan {
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.layanan.satu {
+  background-color: rgb(119, 119, 255);
+}
+.layanan.dua {
+  background-color: rgb(103, 216, 103);
+}
+.layanan.tiga {
+  background-color: rgb(226, 11, 21);
+}
+/* galery */
+
+.container-tiga {
+  width: 800px;
+}
+
+/* respondsive */
+
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+  .layanan {
+    width: 30%;
+  }
+}

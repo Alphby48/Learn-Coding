@@ -1,0 +1,33 @@
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+}
+
+.container {
+  margin-top: 40px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  background-color: yellowgreen;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.content {
+  margin-top: 40px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  background-color: rgb(22, 185, 185);
+  background-image: url(img/IMG_20230122_163026.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 50% 0 0;
+  overflow: hidden;
+}
